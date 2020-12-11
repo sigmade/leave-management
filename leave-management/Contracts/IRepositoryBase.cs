@@ -15,16 +15,6 @@ namespace leave_management.Contracts
         bool Delete(T entity);
         bool Save();
     }
-    public interface ILeaveHistoryRepository : IRepositoryBase<LeaveHistory>
-    {
-    }
+    
 
-    public interface ILeaveAllocationRepository : IRepositoryBase<LeaveAllocation>
-    {
-    }
-
-    public interface ILeaveTypeRepository : IRepositoryBase<LeaveType>
-    {
-        ICollection<LeaveType> GetEmployeesByLeaveType(int id);
-    }
 }
